@@ -39,12 +39,4 @@ def plot():
     plt.title("Rectangular vs Definite Integration of f(x) = 16 - x^2")
     plt.show()
 
-def plot1():
-    fig, ax = plt.subplots()
-    ax.plot(accu_list[100:])
-    plt.ylabel("Accuracy of Rectanguler Integration")
-    plt.xlabel("Number of Rectangles")
-    plt.title("Rectangular vs Definite Integration of f(x) = 16 - x^2")
-    plt.show()
-
 plot()
