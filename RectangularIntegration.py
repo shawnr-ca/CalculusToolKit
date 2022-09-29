@@ -2,7 +2,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import Rectangle
 
-X = np.linspace(-10, 10, 1000)
+user_x1 = float(input("What is the lower bound of the interval for the Riemman Sum you would like to calculate?"))
+user_x2 = float(input("What is the upper bound of the interval for the Riemman Sum you would like to calculate?"))
+user_num_rect = int(input("How many rectangles would you like to approximate with?"))
+
+inter = [user_x1,user_x2]
+X = np.linspace(int(inter[0]*1.1), int(inter[1]*1.1), 1000)
 
 y = np.e**(np.sin(X))
 def func(x):
@@ -10,8 +15,7 @@ def func(x):
 
 func_int = 9.892537052
 
-rect_num = 30
-inter = [-4,4]
+rect_num = user_num_rect
 
 
 inter_dist = (inter[1]-inter[0])
