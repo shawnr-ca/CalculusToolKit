@@ -33,6 +33,4 @@ for rect in range(rect_num):
 
 integral_approx = sum(rect_areas)
 print(integral_approx)
-plt.text(-8,15,"Rectangular Integration Result: " + str(integral_approx))
-plt.text(-8,10,"Integral: " + str(func_int))
 plt.show()
